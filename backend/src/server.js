@@ -11,6 +11,8 @@ const PORT = process.env.PORT || 5001
 
 connectDB(); //attempt to connect database
 
+
+app.use(express.json()) //middleware
 app.use("/api/notes", notesRoutes);
 
 
