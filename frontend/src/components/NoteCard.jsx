@@ -34,7 +34,7 @@ const NoteCard = ({note, setNotes}) => {
                 </span>
                 <div className="flex items-center gap-1">
                     <PenSquareIcon className="size-4" />
-                    <button type="button" className="btn btn-ghost btn-xs text-error" onClick={(e) => handleDelete(e, note._id)}>
+                    <button className="btn btn-ghost btn-xs text-error" onClick={(e) => handleDelete(e, note._id)}>
                         <Trash2Icon className="size-4" />
                     </button>
                 </div>
